@@ -1,0 +1,192 @@
+body{
+	overflow-x: hidden;
+
+	div.container{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		img{
+
+		}
+	}
+
+	hr{
+		margin-left: 3%;
+		margin-right: 3%;
+		color: rgba(136, 9, 115, 1);
+		margin-top: 1%;
+	}
+
+	div.box1{
+		position: relative;
+		top: 2em;
+
+		img{
+			border-radius: 25px;
+			position:absolute;
+			width: 50%;
+			top: 15px;
+			left: 65%;
+			opacity: 0.8;
+		}
+
+
+		h1{
+			position:absolute;
+			font-family: $font2;
+			font-size: 4em;
+			top: 1%;
+			left: -15%;
+			text-shadow: 8px 5px 1px black;
+
+		}
+
+		p.p1{
+			margin-right: 430px;
+			position:absolute;
+			font-family: $font4;
+			text-align: center;
+			top: 170px;
+			font-size: 1.5em;
+			text-shadow: 8px 5px 3px black;
+			color: white;
+		}	
+	}
+
+	hr.hr2{
+		margin-top: 37%;
+
+	}
+
+	div.box2{
+		position: relative;
+
+		img.imgDrink1{
+			position:absolute;
+			width: 25%;
+			top: -11rem;
+			left:-14em;
+
+		}
+
+		img.imgDrink2{
+			position:absolute;
+			top: -1em;
+			right: -12em;
+			width: 50%;
+			opacity: 0.8;
+
+
+
+		}
+
+		h2{
+			right: -10%;
+			top: 0.6em;
+			position: absolute;
+			font-size: 4em;
+			font-family: $font2;
+			text-shadow: 8px 10px 10px black;
+		}
+
+		p.p2{
+			top: 9em;
+			position:absolute;
+			font-family: $font4;
+			text-align: center;
+			font-size: 1.5em;
+			text-shadow: 8px 5px 3px black;
+			color: white;
+
+
+		}
+
+	}
+
+	hr.hr3{
+		margin-top: 664px;
+	}
+
+	div.box3{
+		position:relative;
+
+		h3{
+			left: -3em;
+			top: 1.5em;
+			position: absolute;
+			font-size: 4em;
+			font-family: $font2;
+			text-shadow: 8px 10px 10px black;
+
+		}
+
+		p.p3{
+			left: -4em;
+			top:8em;
+			position:absolute;
+			font-family: $font4;
+			text-align: center;
+			font-size: 1.5em;
+			text-shadow: 8px 5px 3px black;
+			color: white;
+		}
+		img.imgDrink3{
+			position:absolute;
+			top: 6em;
+			right: -11em;
+			width: 41%;
+
+		}
+	}
+
+	div.carrouselImg{
+		  height: 600px;
+		  margin: 0;
+		  display: grid;
+		  grid-template-rows: 500px 100px;
+		  grid-template-columns: 1fr 30px 30px 30px 30px 30px 1fr;
+		  align-items: center;
+		  justify-items: center;
+		  padding-top: 240px;
+		  padding-right: 613px;
+
+		  input{
+
+		  	
+		  }
+		  main#carousel {
+			  grid-row: 1 / 2;
+			  grid-column: 1 / 8;
+			  width: 100vw;
+			  height: 500px;
+			  display: flex;
+			  align-items: center;
+			  justify-content: center;
+			  overflow: hidden;
+			  transform-style: preserve-3d;
+			  perspective: 600px;
+			  --items: 5;
+			  --middle: 3;
+			  --position: 1;
+			  pointer-events: none;
+
+				  div.item {
+					  position: absolute;
+					  width: 300px;
+					  height: 400px;
+					  --r: calc(var(--position) - var(--offset));
+					  --abs: max(calc(var(--r) * -1), var(--r));
+					  transition: all 0.25s linear;
+					  transform: rotateY(calc(-10deg * var(--r)))
+					  translateX(calc(-300px * var(--r)));
+					  z-index: calc((var(--position) - var(--abs)));
+				   
+					}
+			}
+	}
+
+	hr.hr4{
+		margin-top: 820px;
+	}
+}
